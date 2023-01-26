@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #fff;
 }
 
 
@@ -331,13 +332,14 @@ span.separation {
     justify-content: space-between;
     gap: 5rem;
     padding: 10px 10%;
+    flex-wrap: nowrap;
 }
 
 #offer-bar .grid-container .grid-item {
     width: 45%;
     font-family: 'Kanit';
     color: #fff;
-    margin: 48px 0;
+    margin: 25px 0;
 }
 
 #offer-bar h1 {
@@ -372,6 +374,7 @@ span.separation {
 @media (max-width:850px) {
     #offer-bar .grid-container {
         flex-wrap: wrap-reverse;
+        gap: 0;
     }
 
     #offer-bar .grid-container .grid-item {
@@ -444,7 +447,8 @@ span.separation {
     position: relative;
     background-color: #fff;
     margin: 50px 0;
-
+    width: 100%;
+    overflow: hidden;
 }
 
 #card-container .grid-container {
@@ -514,7 +518,7 @@ span.separation {
 
 .scroll-container .card {
     width: 200px;
-    height: 330px;
+    height: auto;
     min-height: unset;
     margin: 5px;
     scroll-snap-align: start;
@@ -528,7 +532,7 @@ span.separation {
 }
 
 .card .name {
-    height: 2rem;
+    height: 3rem;
     line-height: 1rem;
     overflow: hidden;
     font-size: .85rem;
@@ -554,7 +558,7 @@ span.separation {
 
 #service .grid-container {
     padding: 0;
-    margin: 10px 10%;
+    margin: 25px 10%;
     justify-content: space-evenly;
 }
 
@@ -589,6 +593,97 @@ span.separation {
     transform: translateY(-5px);
 }
 
+/* start actions  */
+
+#actions {
+    margin: 35px 10%;
+}
+
+#actions .flex-box {
+    background-color: #eeeeee;
+    justify-content: start;
+    gap: 20px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: flex-start;
+
+}
+
+#actions .flex-box img {
+    max-width: 500px;
+    width: 40%;
+    height: 100%;
+}
+
+#actions .flex-item {
+    width: calc(60% - 20px);
+    font-family: 'Roboto';
+    max-width: 500px;
+    min-width: 300px;
+}
+
+#actions .flex-item .search-bar input::placeholder {
+    font-style: normal;
+
+}
+
+#actions .flex-item button.primary {
+    border-radius: 3px;
+    margin: 15px 0;
+}
+
+#actions .flex-item .search-bar {
+    width: 100%;
+    gap: 10px;
+}
+
+#actions .flex-item h1 {
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+
+#actions .flex-item h6 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #505050;
+
+}
+
+#actions h4 {
+    font-size: 1.25rem !important;
+    font-weight: 400;
+    letter-spacing: .0125em !important;
+    line-height: 2rem;
+    margin: 15px 0;
+    margin: 15px 0;
+}
+
+#actions .flex-item p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #505050;
+
+}
+
+@media (max-width:800px) {
+    #actions .flex-box {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    #actions .flex-box img {
+        width: 100%;
+    }
+}
+
+@media (max-width:450px) {
+   
+    #actions .flex-item .search-bar {
+        flex-wrap: wrap;
+    }
+}
 
 
 /* start footer  */
@@ -603,9 +698,11 @@ footer a:hover {
 .help {
     background-color: #3e403f !important;
 }
+
 .help .flex-box {
     flex-wrap: wrap;
 }
+
 .help p {
     font-size: 17px;
     margin: 5px 10px;
@@ -709,6 +806,14 @@ form .search-bar {
         width: 40%;
     }
 
+}
+@media (max-width:600px) {
+    
+    .footer .flex-box {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 }
 
 @media (max-width:390px) {
