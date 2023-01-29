@@ -46,8 +46,8 @@ ul {
     padding: 0;
     list-style-type: none;
 }
-
-input {
+input[type="email"],
+input[type="text"] {
     font-family: 'Roboto', sans-serif;
     width: 80%;
     max-width: 800px;
@@ -58,12 +58,14 @@ input {
     min-width: 200px;
 }
 
-input::placeholder {
+input[type="email"],
+input[type="text"]::placeholder {
     font-style: italic;
 
 }
 
-input:focus {
+input[type="email"],
+input[type="text"]:focus {
     outline: none;
     border: 2px solid #2196f3;
 }
@@ -271,7 +273,12 @@ span.separation {
     scrollbar-width: none;
 
 }
-
+@media (max-width:350px) {
+    .ham-menu .menu {
+        right: -100%;
+        width: 100%;
+    }
+}
 .ham-menu .menu::-webkit-scrollbar {
     display: none;
     /* Safari and Chrome */
@@ -921,7 +928,13 @@ form .search-bar {
     .flex-content {
         width: 100%;
     }
-
+    footer .search-bar {
+        flex-wrap: wrap;
+    }
+    form.grid-item {
+        width: 50%;
+        min-width: 265px;
+    }
     footer .grid-container:nth-child(1) {
         padding: 10px;
         justify-content: center;

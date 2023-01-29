@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="stampee buy and sell stamps, stamp collections, postal history and other collectables.">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/catalog.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!--font awsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <title>STAMPEE</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="grid-container center">
+            <div class="grid-item">
+                <a href=""><img class="logo" src="images/logo.png" alt=""></a>
+            </div>
+            <div class="desktop-view grid-item search-bar">
+                <input placeholder="Rechercher..." type="text" name="search" id="search">
+                <button class="primary"><i class="icon fa fa-search"></i></button>
+            </div>
+            <div class="desktop-view grid-item flex-box">
+                <div class="flex-box">
+                    <a href="">Enchérir<span class="separation">|</span></a>
+                    <a href="">Joindre<span class="separation">|</span></a>
+                    <a href="">Connectez-Vous</a>
+                </div>
+                <div class="user">
+                    <a href=""><i class="icon fa fa-user"></i></a>
+                    <a href=""><i class="icon fa fa-heart"></i></a>
+                    <a href=""><i class="icon fa fa-tag"></i></a>
+                </div>
+            </div>
+
+            <div class="ham-menu">
+                <label title="toggle menu" for="menu"><span><i class="menu-icon fa fa-bars"></i>
+                    </span>
+
+                </label>
+                <input type="checkbox" name="menu" id="menu" class="check">
+
+                <div class="menu">
+                    <ul>
+                        <div class="search-bar">
+                            <input placeholder="Rechercher..." type="text" name="search" id="search">
+                            <button class="primary"><i class="icon fa fa-search"></i></button>
+                        </div>
+                        <div class="flex-box">
+                            <div class="user">
+                                <a href=""><i class="icon fa fa-user"></i></a>
+                                <a href=""><i class="icon fa fa-heart"></i></a>
+                                <a href=""><i class="icon fa fa-tag"></i></a>
+                            </div>
+                        </div>
+                        <li><a href="">Enchérir</a></li>
+                        <li><a href="">Joindre</a></li>
+                        <li><a href="">Connectez-Vous</a></li>
+                        <hr />
+                        <li><a href="">CATALOGES</a></li>
+                        <li><a href="">ENCHÉRES</a></li>
+                        <li class="menu-hasdropdown">
+                            <label class="toggle-menu" for="settings">
+                                <span class="downarrow">FONCTIONNEMENTS</span> <i class="fa fa-caret-down"></i>
+                            </label>
+                            <input type="checkbox" class="sub-menu-checkbox" id="settings" />
+                            <ul class="sub-menu-dropdown">
+                                <li><a href="">list1</a></li>
+                                <li><a href="">list2</a></li>
+                                <li><a href="">list3</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="">ATUALITÉS</a></li>
+                        <li><a href="">ÉVÉNEMENTS</a></li>
+                        <li class="menu-hasdropdown">
+                            <label class="toggle-menu" for="settings2">
+                                <span class="downarrow">A PROPOS DU LORD STAMPEE </span> <i
+                                    class="fa fa-caret-down"></i>
+                            </label>
+                            <input type="checkbox" class="sub-menu-checkbox" id="settings2" />
+                            <ul class="sub-menu-dropdown">
+                                <li><a href="">list1</a></li>
+                                <li><a href="">list2</a></li>
+                                <li><a href="">list3</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-hasdropdown">
+                            <label class="toggle-menu" for="settings3">
+                                <span class="downarrow">CONTACTEZ NOU</span> <i class="fa fa-caret-down"></i>
+                            </label>
+                            <input type="checkbox" class="sub-menu-checkbox" id="settings3" />
+                            <ul class="sub-menu-dropdown">
+                                <li><a href="">list1</a></li>
+                                <li><a href="">list2</a></li>
+                                <li><a href="">list3</a></li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="desktop-view grid-container menu">
+            <a href="">CATALOGES</a>
+            <a href="">ENCHÉRES</a>
+            <div class="dropdown">
+                <a href="">FONCTIONNEMENTS </a><i class="fa fa-caret-down"></i>
+                <ul>
+                    <li><a href="">list1</a></li>
+                    <li><a href="">list2</a></li>
+                    <li><a href="">list3</a></li>
+                </ul>
+            </div>
+            <a href="">ATUALITÉS</a>
+            <a href="">ÉVÉNEMENTS</a>
+
+            <div class="dropdown">
+                <a href="">A PROPOS DU LORD STAMPEE </a><i class="fa fa-caret-down"></i>
+                <ul>
+                    <li><a href="">list1</a></li>
+                    <li><a href="">list2</a></li>
+                    <li><a href="">list3</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <a href="">CONTACTEZ NOUS </a><i class="fa fa-caret-down"></i>
+                <ul>
+                    <li><a href="">list1</a></li>
+                    <li><a href="">list2</a></li>
+                    <li><a href="">list3</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <section id="catalog">
+        <div class="grid-container">
+            <input type="checkbox" name="filter-check" id="filter-check" class="filter-check">
+            <div class="filter">
+                <label for="filter-check">
+                    <span class="btn primary"><i class="fa fa-angle-left"></i> Filter</span>
+                </label>
+                <div class="filter-item">
+                    <h2>Procédures De Participation</h2>
+                    <label for="Bidding">
+                        <input type="checkbox" name="Bidding" id="Bidding" filter="Participation">
+                        Enchérir Aux Enchères
+
+                    </label>
+                    <label for="Buy">
+                        <input type="checkbox" name="Buy" id="Buy" filter="Participation">
+                        Acheter Maintenant
+                    </label>
+                    <button class="primary" filter="Participation">reset</button>
+                </div>
+                <hr>
+                <div class="filter-item">
+                    <h2>Dates</h2>
+                    <label for="All">
+                        <input type="checkbox" name="All" id="All" filter="Dates">
+                        Tous
+                    </label>
+                    <label for="Past">
+                        <input type="checkbox" name="Past" id="Past" filter="Dates">
+                        Passé
+                    </label>
+                    <label for="Coming">
+                        <input type="checkbox" name="Coming" id="Coming" filter="Dates">
+                        À Venir
+                    </label>
+                    <button class="primary" filter="Dates">reset</button>
+                </div>
+                <hr>
+                <div class="filter-item">
+                    <h2>Les Gabarits Et Les Prix</h2>
+                    <label for="less-than-100">
+                        <input type="checkbox" name="less-than-100" id="less-than-100" filter="prices">
+                        Moins De 100
+                    </label>
+                    <label for="100-to-500">
+                        <input type="checkbox" name="100-to-500" id="100-to-500" filter="prices">
+                        De 100 À 500
+                    </label>
+                    <label for="more-than-500">
+                        <input type="checkbox" name="more-than-500" id="more-than-500" filter="prices">
+                        Plus De 500
+                    </label>
+                    <button class="primary" filter="prices">reset</button>
+                </div>
+                <hr>
+                <div class="filter-item">
+                    <h2>Les Pays D'Origine</h2>
+                    <label for="Canada">
+                        <input type="checkbox" name="Canada" id="Canada" filter="Countries">
+                        Canada
+                    </label>
+                    <label for="England">
+                        <input type="checkbox" name="England" id="England" filter="Countries">
+                        Angleterre
+                    </label>
+                    <label for="USA">
+                        <input type="checkbox" name="USA" id="USA" filter="Countries">
+                        USA
+                    </label>
+                    <label for="France">
+                        <input type="checkbox" name="France" id="France" filter="Countries">
+                        France
+                    </label>
+                    <label for="Japan">
+                        <input type="checkbox" name="Japan" id="Japan" filter="Countries">
+                        Japon
+                    </label>
+                    <button class="primary" filter="Countries">reset</button>
+                </div>
+                <hr>
+                <div class="filter-item">
+                    <h2>Les Créateurs</h2>
+                    <label for="Douglas-Gordons">
+                        <input type="checkbox" name="Douglas Gordons" id="Conrad's-JosePhines" filter="Creators">
+                        Douglas Gordons
+                    </label>
+                    <label for="Conrad's-JosePhines">
+                        <input type="checkbox" name="Conrad's JosePhines" id="Conrad's-JosePhines" filter="Creators">
+                        Conrads JosePhines
+                    </label>
+                    <label for="Clementine-Samueles">
+                        <input type="checkbox" name="Clementine Samueles" id="Clementine-Samueles" filter="Creators">
+                        Clementine Samueles
+                    </label>
+                    <label for="Charlas-Dodgeson">
+                        <input type="checkbox" name="Charlas Dodgeson" id="Charlas-Dodgeson" filter="Creators">
+                        Charlas Dodgeson
+                    </label>
+                    <label for="Walters-Bloomsburys">
+                        <input type="checkbox" name="Walters Bloomsburys" id="Walters-Bloomsburys" filter="Creators">
+                        Walters Bloomsburys
+                    </label>
+                    <button class="primary" filter="Creators">reset</button>
+                </div>
+                <hr>
+                <div class="filter-item">
+                    <h2>PRICE</h2>
+                    <label for="PRICE" class="price-range">
+                        <p class="price-range">1</p>
+                        <input type="range" min="1" max="25000" value="1" class="slider" name="PRICE" id="PRICE"
+                            filter="prices">
+                        <p>25000</p>
+                    </label>
+                    <button class="primary" filter="range-prices">reset</button>
+                </div>
+
+                <div class="filter-item center">
+                    <button class="primary">Search</button>
+                </div>
+
+
+            </div>
+            <div class="results">
+                <h2>Résults</h2>
+                <p>Prx et autres détailles peuvent être differents selon le produit et les couleurs. </p>
+                <label for="filter-check">
+                    <span class="btn primary"><i class="fa fa-angle-left"></i> Filter</span>
+                </label>
+                <div class="grid-cards">
+                    <!-- catalog.js will insert the cards  -->
+                </div>
+                <div>
+                    <ul class="page-num">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <footer>
+        <div class="help grid-container">
+            <div class="flex-box gr">
+                <p><i class="icon fa fa-question-circle-o"></i> Need help? We're here for you!</p>
+                <div>
+                    <a href="">Help Center<span class="separation">|</span></a>
+                    <a href="">Returns<span class="separation">|</span></a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+            <button onclick="scrollToTop()" class="secondary">Back to Top</button>
+        </div>
+        <div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href=""><img class="logo" src="images/logo.png" alt=""></a>
+                </div>
+
+                <form class="grid-item">
+                    <label for="email">
+                        <div class="center">
+                            <h3>Veuillez Vous Abonner À l'lnfolettre lci</h3>
+                        </div>
+
+                        <div class="search-bar">
+                            <input placeholder="examples@mail.com" type="email" name="email" id="email">
+                            <button class="primary">Envoyer</button>
+                        </div>
+
+                    </label>
+                </form>
+            </div>
+            <div class="footer-menu">
+                <div class="flex-content">
+                    <p><strong><i class="fa fa-phone"></i>
+                            +123-456-789</strong></p>
+                    <p href="#"><strong><i class="fa fa-envelope"></i>
+                            stampeelord@gmail.com</strong></p>
+                    <p href="#"><strong><i class="fa fa-map-marker"></i>
+                            123 Bloomsbury,London</strong></p>
+                </div>
+                <div class="flex-content">
+                    <a href="#">Support</a>
+                    <a href="#">Enchères</a>
+                    <a href="#">Sécurité</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">A Propos De Lord Stampee</a>
+                    <a href="#">Contactez Nous</a>
+                    <a href="#">Termes Et Conditions</a>
+                </div>
+                <div class="flex-content">
+                    <a href="#">BUY</a>
+                    <a href="#">United States</a>
+                    <a href="#">Africa</a>
+                    <a href="#">Asia</a>
+                    <a href="#">Australia & Oceania</a>
+                    <a href="#">British Commonwealth</a>
+                    <a href="#">Canada</a>
+                    <a href="#">Caribbean</a>
+                    <a href="#">Europe</a>
+                </div>
+                <div class="flex-content">
+                    <a href="#">Great Britain</a>
+                    <a href="#">Central & South America</a>
+                    <a href="#">Middle East</a>
+                    <a href="#">Worldwide</a>
+                    <a href="#">Topicals</a>
+                    <a href="#">Publications & Supplies</a>
+                    <a href="#">Specialty Philately</a>
+                </div>
+                <div class="flex-content">
+                    <a href="#">Stores</a>
+                    <a href="#">Auction Events</a>
+                    <a href="#">Hip Values</a>
+                </div>
+                <div class="flex-content">
+                    <a href="#">SELL</a>
+                    <a href="#">Sell Your Stamps</a>
+                    <a href="#">Fees</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="grid-container footer">
+            <div class="flex-box">
+                <a href="">©2023 Stampee. Inc<span class="separation">|</span></a>
+                <a href="">Terms and Conditions<span class="separation">|</span></a>
+                <a href="">Privacy Policy</a>
+            </div>
+            <div class="flex-box">
+                <p>Contsacts Media Sociaux</p>
+                <a href=""><i class="icon fa fa-twitter"></i></a>
+                <a href=""><i class="icon fa fa-instagram"></i></a>
+                <a href=""><i class="icon fa fa-facebook-square"></i></a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
